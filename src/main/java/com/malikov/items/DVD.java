@@ -34,7 +34,7 @@ public class DVD extends Item {
         if(this.isBorrowed) {
             throw new RuntimeException("This DVD is borrowed!");
         }
-        System.out.println("DVD " + this.title + " - borrowed(ID: " + this.uniqueID + ")");
+        System.out.println("DVD borrowed: " + this.title + " - (ID: " + this.uniqueID + ")");
         this.isBorrowed = true;
     }
 
@@ -43,7 +43,7 @@ public class DVD extends Item {
         if(!this.isBorrowed) {
             throw new RuntimeException("This DVD is unborrowed!");
         }
-        System.out.println("DVD " + this.title + " - unborrowed(ID: " + this.uniqueID + ")");
+        System.out.println("DVD unborrowed: " + this.title + " - (ID: " + this.uniqueID + ")");
         this.isBorrowed = false;
     }
 

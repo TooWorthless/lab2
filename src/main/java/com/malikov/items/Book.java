@@ -34,7 +34,7 @@ public class Book extends Item {
         if(this.isBorrowed) {
             throw new RuntimeException("This book is borrowed!");
         }
-        System.out.println("Book " + this.title + " (Author: " + this.author + ") " + "- borrowed(ID: " + this.uniqueID + ")");
+        System.out.println("Book borrowed: " + this.title + " (Author: " + this.author + ") " + "- (ID: " + this.uniqueID + ")");
         this.isBorrowed = true;
     }
 
@@ -43,7 +43,7 @@ public class Book extends Item {
         if(!this.isBorrowed) {
             throw new RuntimeException("This book is unborrowed!");
         }
-        System.out.println("Book " + this.title + " (Author: " + this.author + ") " + "- unborrowed(ID: " + this.uniqueID + ")");
+        System.out.println("Book unborrowed: " + this.title + " (Author: " + this.author + ") " + "- (ID: " + this.uniqueID + ")");
         this.isBorrowed = false;
     }
 

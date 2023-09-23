@@ -12,7 +12,12 @@ public abstract class Item {
     public Item(String title) {
         this.title = title;
         this.uniqueID = UUID.randomUUID().toString();
-        isBorrowed = false;
+        this.isBorrowed = false;
+    }
+
+
+    public boolean borrowStatus() {
+        return this.isBorrowed;
     }
 
 
