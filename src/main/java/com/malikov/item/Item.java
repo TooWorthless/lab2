@@ -4,9 +4,9 @@ import java.util.UUID;
 
 
 public abstract class Item {
-    String title;
-    String uniqueID;
-    boolean isBorrowed;
+    protected String title;
+    protected String uniqueID;
+    protected boolean isBorrowed;
 
 
     public Item(String title) {
