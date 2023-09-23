@@ -38,7 +38,7 @@ public class Patron {
     }
 
     public List<Item> getBorrowedItems() {
-        return borrowedItems;
+        return this.borrowedItems;
     }
     public void setBorrowedItems(List<Item> borrowedItems) {
         this.borrowedItems = borrowedItems;

@@ -10,6 +10,9 @@ public abstract class Item {
 
 
     public Item(String title) {
+        if(title.length() <= 0) {
+            throw new IllegalArgumentException("Incorrect title value!");
+        }
         this.title = title;
         this.uniqueID = UUID.randomUUID().toString();
         this.isBorrowed = false;
